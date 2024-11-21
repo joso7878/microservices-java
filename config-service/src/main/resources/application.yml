@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/joso7878/microservices-java.git
+          search-paths:
+          - microservices-java/configs/{application}
+          #username: joso7878
+          #password: senha
